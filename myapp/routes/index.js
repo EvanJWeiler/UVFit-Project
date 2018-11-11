@@ -11,7 +11,7 @@ router.get('/', function (req, res) {
 });
 
 router.post('/', function (req, res) {
-  exec('touch testfile.txt', function (error, stdout, stderr) {
+  exec('restart.sh', function (error, stdout, stderr) {
     console.log(error);
     console.log(stdout);
     console.log(stderr);
