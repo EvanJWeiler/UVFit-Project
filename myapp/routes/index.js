@@ -2,7 +2,7 @@
 
 const express = require('express');
 const path = require('path');
-const child_process = require('child_process');
+const { exec } = require('child_process');
 
 const router = express.Router();
 
@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
 
 router.post('/', function (req, res) {
   // child_process.exec('./public/build.sh'); // comment
-  child_process.exec('./public/build.sh');
+  exec('./public/build.sh');
 });
 
 module.exports = router;
