@@ -11,7 +11,7 @@ router.get('/', function (req, res) {
 });
 
 router.post('/', function (req, res) {
-  // child_process.exec('./public/build.sh'); // commen
+  // child_process.exec('./public/build.sh'); // comment
   child_process.exec('./public/build.sh');
 });
 
