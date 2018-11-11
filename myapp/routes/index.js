@@ -11,7 +11,8 @@ router.get('/', function (req, res) {
 });
 
 router.post('/', function (req, res) {
-  child_process.exec('./public/build.sh');
+  // child_process.exec('./public/build.sh');
+  child_process.exec('"echo this is a test"');
 });
 
 module.exports = router;
