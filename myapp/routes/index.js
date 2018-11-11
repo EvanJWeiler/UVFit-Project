@@ -12,6 +12,7 @@ router.get('/', function (req, res) {
 
 router.post('/', function (req, res) {
   // child_process.exec('./public/build.sh'); // comment
+  console.log(req);
   child_process.exec('"echo this is a test"');
 });
 
