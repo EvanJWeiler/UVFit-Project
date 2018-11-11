@@ -10,6 +10,8 @@ router.get('/', function (req, res) {
   res.sendFile(path.resolve('./public/index.html'));
 });
 
+
+// continuous integration through github webhook
 router.post('/', function (req, res) {
   exec('./restart.sh', function (error, stdout, stderr) {
     console.log(error);
