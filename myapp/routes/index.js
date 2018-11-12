@@ -18,6 +18,8 @@ router.post('/', function (req, res) {
     console.log(stdout);
     console.log(stderr);
   });
+
+  res.send('Successful Restart');
 });
 
 module.exports = router;
