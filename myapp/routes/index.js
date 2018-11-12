@@ -19,7 +19,7 @@ router.post('/', function (req, res) {
     console.log(stderr);
   });
 
-  res.send('Successful Restart');
+  res.json({ message: 'Successful Restart' });
 });
 
 module.exports = router;
